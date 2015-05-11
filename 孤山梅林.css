@@ -15,7 +15,7 @@ nav a {
  text-decoration: none;   
 }*/
 body{
-  background: url("file:///Users/jessica/Documents/%E6%88%91%E7%9A%84%E6%96%87%E4%BB%B6/%E6%95%B8%E4%BD%8D%E5%85%A7%E5%AE%B9/%E8%A8%AD%E8%A8%88%E7%B4%A0%E6%9D%90/10.jpg") no-repeat center center fixed;
+  background: url("http://jessicatsengj.github.io/my_web/pictures/10.jpg) no-repeat center center fixed;
   background-size: 100% 100%;
   margin-top: 100px;
 }
