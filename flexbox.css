@@ -1,0 +1,63 @@
+body{
+ background:  url(file://localhost/Users/jessica/Documents/%E6%88%91%E7%9A%84%E6%96%87%E4%BB%B6/%E6%B5%AA%E4%BF%A0%E5%AC%8C%E5%AE%A2/%E6%AD%A6%E4%BF%A0%E5%9C%96/%E4%B8%AD%E5%9C%8B%E9%A2%A8%E5%85%83%E7%B4%A0/%E4%B8%AD%E5%9C%8B%E9%A2%A8%E8%83%8C%E6%99%AF1.jpg)
+ #000  fixed no-repeat left top;
+  background-size: 100% ;
+  
+ 
+}
+
+#main {
+  font-family: sans-serif;
+  font-weight: bolder;
+}
+ 
+/* box styles */
+.box-example {
+  margin: 10px 20px;
+}
+ 
+/* flexbox */
+.flexbox {
+  background: rgba(255,255,255,.5);
+  border: 2px solid #996633;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  display: -webkit-box;
+  display: box;
+  font-family: sans-serif;
+  width: 60%;
+  margin: auto ;
+}
+ 
+.flexbox-item {
+  background: #996633;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  color: #fff;
+  height: 2em;
+  line-height: 2;
+  margin: 0.5em;
+  text-align: center;
+  
+}
+ 
+ 
+.flex-1 {
+  -webkit-box-flex: 1;
+  
+}
+ 
+.flex-2 {
+  -webkit-box-flex: 2;
+  
+}
+ 
+ 
+.flexbox-orient-vertical {
+  -webkit-box-orient: vertical;
+ padding:15px;
+}
+
+p{
+  font: 16px/1.5 monospace;
+}

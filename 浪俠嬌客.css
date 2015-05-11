@@ -1,0 +1,118 @@
+body{
+	background: 
+    url("file://localhost/Users/jessica/Documents/%E6%88%91%E7%9A%84%E6%96%87%E4%BB%B6/%E6%B5%AA%E4%BF%A0%E5%AC%8C%E5%AE%A2/flowers/people.png") no-repeat left bottom fixed,
+	url("file://localhost/Users/jessica/Documents/%E6%88%91%E7%9A%84%E6%96%87%E4%BB%B6/%E6%B5%AA%E4%BF%A0%E5%AC%8C%E5%AE%A2/flowers/bg3.png") no-repeat center center fixed;
+	background-size: 450px , 100% 100% ;
+  margin-top: 90px;
+}
+.box1 .menu .list {
+    display: -webkit-box;
+    display: box;
+    position: fixed;
+    height: 70px;
+    top: 0;
+    left: -40px;
+    width: 100%;
+    z-index: 1;
+}
+ 
+.box1 .menu .navigation-item {
+    -webkit-box-flex: 1;
+    box-flex: 1;
+    width: 100%;
+}
+.box1 .menu a {
+    margin-top: -10px;
+    background: rgba(0,0,0,.6);
+    color: #fff;
+    display: block;
+    padding: 1.2em 0;
+    text-align: center;
+    text-decoration: none;
+    text-indent: -0.5em;
+    -webkit-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+}
+ 
+.box1 .menu a:hover {
+    background: #000;
+}
+.flexbox {
+    display: -webkit-box;
+    display: box;
+    position: relative;
+    /*top: 3em;*/
+    font-family: sans-serif;
+    font-size: 1.5em;
+    width: 20%;
+    margin: auto ;
+    -webkit-box-orient: vertical;
+}
+.flexbox-item {
+    background: rgba(255,255,255,.5);
+    border: 3px solid #696969;
+    border-radius: 20px;
+    height: 2em;
+    line-height: 2;
+    margin: 0.5em;
+    margin-left: -1em;
+    text-align: center;
+    
+    font-weight: bold;
+    color: #000;
+}
+.flexbox-item a{  
+    text-decoration: none;
+    color: #000;
+}
+.flexbox :hover{  
+    background: rgba(194,233,255,.6);
+}
+.quote {
+  background: rgba(194,223,255,.6);
+  border: 4px solid #696969;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  left: 0;
+  opacity: 0;
+  padding: 10px ;
+  position: absolute;
+  top: 1em;
+  /*left: 20em;*/
+  margin-left: 20em;
+  width: 25em;
+  text-align: left;
+  font-size: 18px;
+  line-height: 1.3em;
+}
+.quote::after {
+  border-bottom: solid 8px transparent;
+  border-right: solid 12px #696969;
+  border-top: solid 8px transparent;
+  content: "";
+  display: box;
+  height: 0;
+  left: -12px;
+  margin-top: -6px;
+  position: absolute;
+  top: 50%;
+  width: 0;
+}
+/*.flexbox-item a,
+.flexbox-item a:hover*/ .quote {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.flexbox-item a:hover .quote {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+ /* top: -3em;*/
+}
+.flexbox :hover .quote{  
+  opacity: 1;  
+}
+
