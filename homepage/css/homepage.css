@@ -1,0 +1,70 @@
+@charset "UTF-8";
+.inner .slideshow img, .inner .lens {
+  position: absolute;
+  width: 100%;
+  height: 720px;
+}
+
+.inner .slideshow img {
+  display: none;
+}
+.inner .lens {
+  top: 0;
+  box-shadow: inset 0 0 700px 500px rgba(0, 0, 0, 0.2), inset 0 0 200px 100px rgba(0, 0, 0, 0.8);
+  opacity: 0.6;
+}
+.inner .topic img {
+  position: absolute;
+  left: 40%;
+  top: 40%;
+  vertical-align: middle;
+  width: 20%;
+}
+
+/* JavsScript 無効時 */
+.no-js .slideshow img:first-child {
+  display: inline;
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  right: 5px;
+  width: 105%;
+  z-index: 1;
+}
+nav .nav-item {
+  float: right;
+  padding: 5px;
+}
+nav .nav-item a {
+  color: #fff;
+}
+
+.bamboo img {
+  width: 100%;
+  margin-top: 50%;
+}
+
+.parallax-window {
+  min-height: 720px;
+  width: 100%;
+  background: transparent;
+}
+.parallax-window img {
+  position: relative;
+  top: 400px;
+  left: 1100px;
+  width: 20%;
+  opacity: 0;
+  margin-top: -1em;
+}
+.parallax-window p {
+  position: relative;
+  top: -120px;
+  background-color: black;
+  color: #fff;
+  font-size: 18px;
+  padding: 20px;
+  margin-bottom: -1em;
+}
