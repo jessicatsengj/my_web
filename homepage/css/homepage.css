@@ -7,6 +7,9 @@
 .inner .slideshow img {
   display: none;
 }
+.inner .lens img {
+  top: 0;
+}
 
 /* JavsScript 無効時 */
 .no-js .slideshow img:first-child {
@@ -14,15 +17,18 @@
 }
 
 nav {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   position: fixed;
-  right: 5px;
-  width: 105%;
-  z-index: 1;
+  right: 15px;
+  width: 100%;
+  z-index: 100;
+  top: 0;
 }
 nav .nav-item {
   float: right;
-  padding: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 20px;
 }
 nav .nav-item a {
   color: #fff;
@@ -34,9 +40,14 @@ nav .nav-item a {
 }
 
 .parallax-window {
-  min-height: 720px;
+  min-height: 800px;
   width: 100%;
   background: transparent;
+  margin-bottom: -1em;
+}
+.parallax-window .intro {
+  text-align: center;
+  font-size: 18px;
 }
 .parallax-window .poem {
   position: relative;
@@ -46,41 +57,57 @@ nav .nav-item a {
   opacity: 0;
   margin-top: -1em;
 }
-.parallax-window p {
+.parallax-window h1 {
   position: relative;
-  top: -60px;
+  top: -30px;
   background-color: black;
   color: #fff;
-  font-size: 18px;
+  font-size: 36px;
   padding: 20px;
-  margin-bottom: -1em;
+  z-index: 200;
 }
-.parallax-window .blocks {
-  position: relative;
-  left: 7%;
+.parallax-window .section {
+  text-align: center;
+  padding: 100px;
 }
-.parallax-window .blocks .bd {
+.parallax-window .section .button {
   position: relative;
-  top: 40px;
-  width: 25%;
-  margin: 25px;
+  margin-top: -5em;
   text-align: center;
 }
-.parallax-window #gd {
-  position: absolute;
-  width: 20%;
-  top: 13em;
-  left: 8%;
+.parallax-window .section .button .bd {
+  position: relative;
+  width: 400px;
 }
-.parallax-window #id {
-  position: absolute;
-  width: 20%;
-  top: 13em;
-  left: 40%;
+.parallax-window .section .button .wd {
+  width: 300px;
+  margin-top: 10px;
+  position: relative;
+  text-align: center;
 }
-.parallax-window #wri {
-  position: absolute;
-  width: 20%;
-  top: 13em;
-  left: 75%;
+
+html, body {
+  height: 100%;
+}
+
+#root {
+  clear: both;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -60px;
+}
+#root #root_footer {
+  height: 60px;
+}
+
+#footer {
+  clear: both;
+  position: relative;
+  height: 60px;
+}
+
+#footer {
+  background-color: #000;
+  color: #fff;
 }

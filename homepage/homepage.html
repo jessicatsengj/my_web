@@ -11,49 +11,94 @@
 		<script src="./js/vendor/modernizr.custom.min.js"></script>
 		<script src="./js/vendor/jquery-1.10.2.min.js"></script>
 		<script src="./js/homepage.js"></script>
-
+		<script src="./js/processing.js"></script>
+		<script src="./js/graphic.js"></script>
+		<script src="./js/interactive.js"></script>
+		<script src="./js/words.js"></script>
+		<!-- Start WOWSlider.com HEAD section -->
+		<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+		<script type="text/javascript" src="engine1/jquery.js"></script>
+		<!-- End WOWSlider.com HEAD section -->
 	</head>
 	<body>
-		<header class="hero-header">
-			<div class="inner">
-				<div class="slideshow">
-					<img src="./img/落花slide.png">
-					<img src="./img/犬判slide.png">
-					<img src="./img/浪俠slide.png">
+		<div id="root">
+			<header class="hero-header">
+				<div class="inner">
+					<!-- Start WOWSlider.com BODY section -->
+					<div id="wowslider-container1">
+						<div class="ws_images"><ul>
+							<li><img src="data1/images/slide.png" alt="犬判slide" title="犬判slide" id="wows1_0"/></li>
+						</ul></div>
+						<div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">jquery image gallery</a> by WOWSlider.com v8.1m</div>
+						<div class="ws_shadow"></div>
+						<div class="lens"><img src="./img/mask.png"></div>
+					</div>
+					<script type="text/javascript" src="engine1/wowslider.js"></script>
+					<script type="text/javascript" src="engine1/script.js"></script>
+					<!-- End WOWSlider.com BODY section -->
+					
+					<!-- <div class="slideshow">
+							<img src="./img/落花slide.png">
+							<img src="./img/犬判slide.png">
+							<img src="./img/浪俠slide.png">
+					</div> -->
+					
+					<nav class="row">
+						<ul class="nav">
+							<li class="nav-item"><a href="#about">ABOUT</a></li>
+							<li class="nav-item"><a href="#latest">PORTFOLIO</a></li>
+							<li class="nav-item"><a href="#contact">DESIGNER</a></li>
+						</ul>
+					</nav>
 				</div>
-				<div class="lens"><img src="./img/mask.png"></div>
-				<!-- <div class="topic"><img src="./img/孤山字.png"></div> -->
+			</header>
+			
+			
+			
+			<!-- <div class="parallax-window" data-parallax="scroll" data-image-src="./img/bg_black.png"></div> -->
+			<div class="parallax-window" data-parallax="scroll" data-image-src="./img/forest.png">
+				<h1>ABOUT</h1>
+				<!-- <img src="./img/孤山詩.png" class="poem"> -->
+				<div class="intro">
+					<p>Hi there, my name is <strong>Jessica Tseng</strong>, and I'm a ...</p>
+					<br>
+					<h2>Graphic Designer</h2>
+					<p>I desgin and illustrate images</p>
+					<br>
+					<h2>Interaction Designer</h2>
+					<p>I design things of pleasure interactions with technology</p>
+					<br>
+					<h2>Front-End Developer</h2>
+					<p>I code my designs on web with HTML, CSS and JavaScript</p>
+					<br>
+					<h2>Novelist</h2>
+					<p>I write stories, mostly the type of Chinese Wuxia Novel</p>
+					<br>
+					<p><strong>I merge Chinese characters with the latest trends, <br>developing a distinctive personal style of Chinese art</strong></p>
+				</div>
 			</div>
-		</header>
-		
-		<nav class="row">
-			<ul class="nav">
-				<li class="nav-item"><a href="#about">ABOUT</a></li>
-				<li class="nav-item"><a href="#latest">PORTFOLIO</a></li>
-				<li class="nav-item"><a href="#contact">CONTACT ME</a></li>
-			</ul>
-		</nav>
-		<!-- <div class="bamboo"><img src="./img/forest.png"></div> -->
+			<div class="parallax-window" data-parallax="scroll" data-image-src="./img/paperbg.png">
+				<h1>PORTFOLIO</h1>
+				<div class="row section">
+					<div class="col-md-4 button"><canvas id="canvas1"></canvas>
+					<a href="#"><img src="./img/gd.png" id="gd" class="wd"></a></div>
+					<div class="col-md-4 button"><canvas id="canvas2"></canvas>
+					<a href="#"><img src="./img/id.png" id="id" class="wd" ></a></div>
+					<div class="col-md-4 button"><canvas id="canvas3"></canvas>
+					<a href="#"><img src="./img/wri.png" id="wri" class="wd"></a></div>
 
-		<div class="parallax-window" data-parallax="scroll" data-image-src="./img/bg_black.png"></div>
-		<div class="parallax-window" data-parallax="scroll" data-image-src="./img/forest.png">
-		<img src="./img/孤山詩.png" class="poem">
+						
+						
+					
+				</div>
+				
+				<!-- <p><canvas id="canvas1" width="359" height="355"></canvas></p>	 -->			
+			</div>
+			<div id="root_footer"></div>
 		</div>
-		<div class="parallax-window" data-parallax="scroll" data-image-src="./img/paperbg.png"><p>Morbi mattis ornare ornare. Duis quam turpis, gravida at leo elementum elit fusce accumsan dui libero, quis vehicula lectus ultricies eu. In convallis amet leo non sapien iaculis efficitur consequat lorem ipsum.Morbi mattis ornare ornare. Duis quam turpis, gravida at leo elementum elit fusce accumsan dui libero, quis vehicula lectus ultricies eu.   </p>
-			<span class="blocks">
-				<img src="./img/block1.png" class="bd">
-				<img src="./img/block1.png" class="bd">
-				<img src="./img/block1.png" class="bd">
-
-				<img src="./img/gd.png" id="gd">
-	 			<img src="./img/id.png" id="id" >
-	 			<img src="./img/wri.png" id="wri">
-	 		</span>
-	 		
-	 			
-	 	
+		<div id="footer">
+			Footer content goes here.<br>
+			lkkjhh 
 		</div>
-		
-
 	</body>
 </html>

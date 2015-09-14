@@ -38,7 +38,7 @@ $(function () {
     $('.poem').each(function () {
 
         var $window = $(window), 
-            $slide = $('.slideshow'),  
+            $slide = $('#wowslider-container1'),  
             $poem = $('.poem'); 
         
             slideOffsetTop = $slide.offset().top;
@@ -60,6 +60,24 @@ $(function () {
         
 
     });
+
+    var wid = $('.wd').width;
+    $('.wd').hover(
+        function(){           
+            $(this).stop().animate({ 
+                width: '330px',
+                // left: '-=2%'
+            },500);
+                
+        }, //fun1
+        function(){
+            $(this).stop().animate({ 
+                width: '300px',
+                // left: '+=2%'
+            },500);
+                
+        } //fun2
+    ); //end hover
 
 
 });
